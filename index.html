@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeanUp | Premium Coffee Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader" class="loader-container">
+        <div class="coffee-loader"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Bean<span>Up</span>.</a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">Our Story</a>
+                <a href="#newsletter">Contact</a>
+            </div>
+
+            <div class="nav-icons">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode"><i class="ri-moon-line"></i></button>
+                <button id="fav-btn" aria-label="Favorites"><i class="ri-heart-line"></i><span class="badge" id="fav-count">0</span></button>
+                <button id="cart-btn" aria-label="Cart"><i class="ri-shopping-bag-line"></i><span class="badge" id="cart-count">0</span></button>
+                <button id="menu-btn" class="mobile-toggle"><i class="ri-menu-4-line"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=2071&auto=format&fit=crop');">
+                <div class="slide-content">
+                    <h1>Experience the Perfect Brew</h1>
+                    <p>Artisan roasted coffee beans delivered to your doorstep.</p>
+                    <a href="#menu" class="cta-btn">Shop Coffee</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1974&auto=format&fit=crop');">
+                <div class="slide-content">
+                    <h1>Awaken Your Senses</h1>
+                    <p>From the Ethiopian highlands to your morning cup.</p>
+                    <a href="#menu" class="cta-btn">Explore Flavors</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1922&auto=format&fit=crop');">
+                <div class="slide-content">
+                    <h1>Crafted with Passion</h1>
+                    <p>Every bean tells a story of tradition and taste.</p>
+                    <a href="#menu" class="cta-btn">View Best Sellers</a>
+                </div>
+            </div>
+            
+            <button class="slider-btn prev-btn"><i class="ri-arrow-left-s-line"></i></button>
+            <button class="slider-btn next-btn"><i class="ri-arrow-right-s-line"></i></button>
+            <div class="dots-container"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="menu" class="menu-controls container section-padding">
+            <div class="section-header">
+                <h2>Our Premium Collection</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="controls-wrapper">
+                <div class="search-box">
+                    <i class="ri-search-line"></i>
+                    <input type="text" id="search-input" placeholder="Search coffee flavors...">
+                </div>
+                
+                <div class="sort-box">
+                    <select id="sort-select">
+                        <option value="default">Sort by: Featured</option>
+                        <option value="low-high">Price: Low to High</option>
+                        <option value="high-low">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="category-filters" id="category-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Hot Coffee">Hot Coffee</button>
+                <button class="filter-btn" data-filter="Cold Coffee">Cold Coffee</button>
+                <button class="filter-btn" data-filter="Signature">Signature</button>
+                <button class="filter-btn" data-filter="best-seller">Best Sellers 🔥</button>
+            </div>
+        </section>
+
+        <section class="container products-section">
+            <div id="product-grid" class="product-grid">
+                </div>
+        </section>
+
+        <section id="newsletter" class="newsletter-section section-padding">
+            <div class="container newsletter-content">
+                <h2>Join the BeanUp Club</h2>
+                <p>Get 10% off your first order and exclusive access to new roasts.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="cta-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+<section id="about" class="story-section section-padding">
+  <div class="container story-wrapper">
+    
+    <div class="story-text">
+      <h2>Our Story</h2>
+      <div class="divider"></div>
+      <p>
+        BeanUp was born from a simple belief — great coffee has the power to
+        bring people together. From carefully sourced beans to thoughtfully
+        crafted brews, every cup reflects our passion for quality and warmth.
+      </p>
+      <p>
+        We collaborate with ethical farmers, roast in small batches, and focus
+        on rich flavors that elevate your everyday coffee ritual. BeanUp isn't
+        just coffee — it's a moment of comfort, creativity, and connection.
+      </p>
+      <a href="#menu" class="cta-btn story-btn">Explore Our Menu</a>
+    </div>
+
+    <div class="story-image">
+      <img 
+        src="assets/hero.jpg"
+        alt="BeanUp coffee story"
+      />
+    </div>
+
+  </div>
+</section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Bean<span>Up</span>.</h3>
+                <p>Brewing happiness since 2025.</p>
+                <div class="socials">
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-twitter-x-line"></i>
+                    <i class="ri-facebook-fill"></i>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Locations</a>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="#">Contact Us</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy;  2025 BeanUp Coffee Co. | Building Premium Coffee Experiences
+</p>
+        </div>
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart"><i class="ri-close-line"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart-msg">Your cart is empty. Start brewing!</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">₹0.00</span>
+            </div>
+            <div class="cart-total">
+                <span>Tax (8%)</span>
+                <span id="cart-tax">₹0.00</span>
+            </div>
+            <div class="cart-total total-highlight">
+                <span>Total</span>
+                <span id="cart-total-final">₹0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <div class="fav-sidebar" id="fav-sidebar">
+        <div class="cart-header">
+            <h3>Your Favorites</h3>
+            <button id="close-fav"><i class="ri-close-line"></i></button>
+        </div>
+        <div class="cart-items" id="fav-items">
+            </div>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
