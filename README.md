@@ -1,6 +1,6 @@
-# ☕ Cafe Time – Cafe Website
+# ☕ BeanUp – Cafe Website
 
-**Cafe Time** is a modern, responsive café website developed using **HTML, CSS, and JavaScript**.  
+**BeanUp** is a modern, responsive café website developed using **HTML, CSS, and JavaScript**.  
 The website is designed to create a warm and inviting digital experience that reflects a real-world café atmosphere.
 
 ---
