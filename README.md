@@ -8,7 +8,7 @@ The website is designed to create a warm and inviting digital experience that re
 ## 🌐 Live Demo
 
 🔗 **Live Project Link:**  
-👉 
+👉 [Live Link](https://mansi-99914.github.io/BeanUp/)
 
 ## 🚀 Features
 
